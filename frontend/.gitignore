@@ -6,6 +6,8 @@
 .pnp.js
 .env
 
+/infoVideo.txt
+
 
 # misc
 .DS_Store
