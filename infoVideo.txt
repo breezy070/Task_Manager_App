@@ -1,0 +1,19 @@
+finished at #19 end of video
+
+
+THINGS TO REMEMBER
+"frontend": "npm start --prefix frontend" in ./frontend/package.json , the prefix means that we are going from the backend folder to the frontend folder
+in the video, his serverside package.json file is in the root folder, mine is inside the server folder, thats why i use ../frontend in --prefix
+
+
+in the video he used node-sass as a dependency, but it is now deprecated to just sass
+
+the concurrently dependency helps you run two scripts with one command, we use it here to run both the backend and frontend at the sime time with the command npm run both
+
+
+the react components are all being implemented inside the TaskList.js file
+
+cors is for when you are sharing information between frontend and backend and the http addresses are both different.
+
+one way to not have to use the server url hardcoded is to go to the package.json in the frontend and add a proxy variable with the server url, this doesnt always work
+another way of doing the sameting as above is to create a .env variable for the server url using process.env.server_url
